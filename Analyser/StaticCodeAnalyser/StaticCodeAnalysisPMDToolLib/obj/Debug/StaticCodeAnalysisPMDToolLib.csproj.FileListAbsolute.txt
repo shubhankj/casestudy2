@@ -1,0 +1,9 @@
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\bin\Debug\StaticCodeAnalysisPMDToolLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\bin\Debug\StaticCodeAnalysisPMDToolLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\bin\Debug\StaticCodeAnalysisToolContractLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\bin\Debug\StaticCodeAnalysisToolContractLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\obj\Debug\StaticCodeAnalysisPMDToolLib.csprojAssemblyReference.cache
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\obj\Debug\StaticCodeAnalysisPMDToolLib.csproj.CoreCompileInputs.cache
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\obj\Debug\StaticCodeAnalysisPMDToolLib.csproj.CopyComplete
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\obj\Debug\StaticCodeAnalysisPMDToolLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\obj\Debug\StaticCodeAnalysisPMDToolLib.pdb

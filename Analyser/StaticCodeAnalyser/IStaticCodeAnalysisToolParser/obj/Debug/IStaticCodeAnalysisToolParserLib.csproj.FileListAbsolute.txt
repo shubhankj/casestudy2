@@ -1,0 +1,6 @@
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\IStaticCodeAnalysisToolParser\bin\Debug\IStaticCodeAnalysisToolParserLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\IStaticCodeAnalysisToolParser\bin\Debug\IStaticCodeAnalysisToolParserLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\IStaticCodeAnalysisToolParser\obj\Debug\IStaticCodeAnalysisToolParserLib.csprojAssemblyReference.cache
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\IStaticCodeAnalysisToolParser\obj\Debug\IStaticCodeAnalysisToolParserLib.csproj.CoreCompileInputs.cache
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\IStaticCodeAnalysisToolParser\obj\Debug\IStaticCodeAnalysisToolParserLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\IStaticCodeAnalysisToolParser\obj\Debug\IStaticCodeAnalysisToolParserLib.pdb

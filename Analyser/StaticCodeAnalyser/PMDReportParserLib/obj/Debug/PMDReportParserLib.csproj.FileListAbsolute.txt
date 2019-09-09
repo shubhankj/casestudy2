@@ -1,0 +1,9 @@
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\obj\Debug\PMDReportParserLib.csprojAssemblyReference.cache
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\obj\Debug\PMDReportParserLib.csproj.CoreCompileInputs.cache
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\bin\Debug\PMDReportParserLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\bin\Debug\PMDReportParserLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\bin\Debug\IStaticCodeAnalysisToolParserLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\bin\Debug\IStaticCodeAnalysisToolParserLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\obj\Debug\PMDReportParserLib.csproj.CopyComplete
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\obj\Debug\PMDReportParserLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDReportParserLib\obj\Debug\PMDReportParserLib.pdb
