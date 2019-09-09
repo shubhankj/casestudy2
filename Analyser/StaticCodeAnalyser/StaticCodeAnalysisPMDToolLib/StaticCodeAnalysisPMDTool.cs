@@ -5,16 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using StaticCodeAnalysisToolContractLib;
+using IStaticCodeAnalysisToolParserLib;
+using PMDReportParserLib;
 
 namespace StaticCodeAnalysisPMDToolLib
 {
     public class StaticCodeAnalysisPMDTool : IStaticCodeAnalysisTool
     {
-        private string _rulesetFilePath;// = @"C:\Users\320052123\C++CaseStudy\casestudy1\pmd-bin-6.16.0\bin\rulesets\java\quickstart.xml";
+        private string _rulesetFilePath;// = @"..\..\pmd-bin-6.16.0\bin\rulesets\java\quickstart.xml";
 
         public StaticCodeAnalysisPMDTool(string rulesetFilePath)
         {
             _rulesetFilePath = rulesetFilePath;
+        }
+
+        public IStaticCodeAnalysisToolParser GetParserObject()
+        {
+            return new PMDReportParser();
         }
 
         public int Analyse(string batFilePath, string codeDirectoryPath, string reportFilePath)
@@ -35,9 +42,7 @@ namespace StaticCodeAnalysisPMDToolLib
                 cmd.StandardInput.Flush();
                 cmd.StandardInput.Close();
                 cmd.WaitForExit();
-
-                //Process P = Process.Start("CMD.exe", cmd);
-                //return 0;
+                
                 return cmd.ExitCode;
             }
 

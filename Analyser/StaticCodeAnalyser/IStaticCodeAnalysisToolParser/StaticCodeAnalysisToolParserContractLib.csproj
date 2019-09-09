@@ -7,8 +7,8 @@
     <ProjectGuid>{3413D4C5-6D06-4814-A53E-27783D7437DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IStaticCodeAnalysisToolParserLib</RootNamespace>
-    <AssemblyName>IStaticCodeAnalysisToolParserLib</AssemblyName>
+    <RootNamespace>StaticCodeAnalysisToolParserContractLib</RootNamespace>
+    <AssemblyName>StaticCodeAnalysisToolParserContractLib</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

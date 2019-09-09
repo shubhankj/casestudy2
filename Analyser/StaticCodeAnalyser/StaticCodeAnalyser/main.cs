@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +13,12 @@ namespace StaticCodeAnalyzer
     {
         public static int Main(string[] args)
         {
-            string pMDToolRuleset = @"C:\Users\320052125\casestudy2\Analyser\pmd-bin-6.16.0\bin\rulesets\java\quickstart.xml";
-            string pMDBatFile = @"C:\Users\320052125\casestudy2\Analyser\pmd-bin-6.16.0\bin\pmd.bat";
-            string sampleCodeDirectory = @"C:\Users\320052125\casestudy2\Analyser\feereport";
-            string pmDReport = @"C:\Users\320052125\casestudy2\Analyser\PMDReport.txt";
-            string outputFile = @"C:\Users\320052125\casestudy2\Analyser\FinalReport.txt";
+            Directory.SetCurrentDirectory(@"..\..\..\..\");
+            string pMDToolRuleset = @"pmd-bin-6.16.0\bin\rulesets\java\quickstart.xml";
+            string pMDBatFile = @"pmd-bin-6.16.0\bin\pmd.bat";
+            string sampleCodeDirectory = @"feereport";
+            string pmDReport = @"PMDReport.txt";
+            string outputFile = @"FinalReport.csv";
 
             StaticCodeAnalysisPMDTool pMDTool = new StaticCodeAnalysisPMDTool(pMDToolRuleset);
 

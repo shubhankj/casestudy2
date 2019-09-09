@@ -20,7 +20,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMDToolWebService", "PMDToo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisReportsCSVMergerLib", "StaticCodeAnalysisReportsCSVMerger\StaticCodeAnalysisReportsCSVMergerLib.csproj", "{70F83F56-6F6F-4613-BC77-4B6732BB8F2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IStaticCodeAnalysisToolParserLib", "IStaticCodeAnalysisToolParser\IStaticCodeAnalysisToolParserLib.csproj", "{3413D4C5-6D06-4814-A53E-27783D7437DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisToolParserContractLib", "IStaticCodeAnalysisToolParser\StaticCodeAnalysisToolParserContractLib.csproj", "{3413D4C5-6D06-4814-A53E-27783D7437DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMDReportParserLib", "PMDReportParserLib\PMDReportParserLib.csproj", "{8F857967-73BE-44EC-AB01-9E5316170123}"
 EndProject

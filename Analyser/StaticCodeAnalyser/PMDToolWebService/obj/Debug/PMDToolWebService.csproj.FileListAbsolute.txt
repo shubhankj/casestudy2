@@ -12,3 +12,9 @@ C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\obj\
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\obj\Debug\PMDToolWebService.csproj.CopyComplete
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\obj\Debug\PMDToolWebService.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\obj\Debug\PMDToolWebService.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\bin\StaticCodeAnalysisReportsCSVMergerLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\bin\StaticCodeAnalysisToolParserContractLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\bin\PMDReportParserLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\bin\StaticCodeAnalysisReportsCSVMergerLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\bin\StaticCodeAnalysisToolParserContractLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\PMDToolWebService\bin\PMDReportParserLib.pdb

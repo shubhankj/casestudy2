@@ -15,3 +15,9 @@ C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\obj\Debug\
 C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\PMDToolWebService.dll
 C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\PMDToolWebService.pdb
 C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\PMDToolWebService.dll.config
+C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\StaticCodeAnalysisReportsCSVMergerLib.dll
+C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\StaticCodeAnalysisToolParserContractLib.dll
+C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\PMDReportParserLib.dll
+C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\StaticCodeAnalysisReportsCSVMergerLib.pdb
+C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\StaticCodeAnalysisToolParserContractLib.pdb
+C:\Users\320052125\casestudy2\WebService\StaticCodeAnalysisWebService\bin\PMDReportParserLib.pdb

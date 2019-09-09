@@ -7,14 +7,14 @@ C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisPMDToolLib.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisToolContractLib.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisReportsCSVMergerLib.dll
-C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\IStaticCodeAnalysisToolParserLib.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\PMDReportParserLib.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisController.pdb
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisPMDToolLib.pdb
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisToolContractLib.pdb
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisReportsCSVMergerLib.pdb
-C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\IStaticCodeAnalysisToolParserLib.pdb
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\PMDReportParserLib.pdb
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\obj\Debug\StaticCodeAnalyser.csproj.CopyComplete
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\obj\Debug\StaticCodeAnalyser.exe
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\obj\Debug\StaticCodeAnalyser.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisToolParserContractLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisToolParserContractLib.pdb

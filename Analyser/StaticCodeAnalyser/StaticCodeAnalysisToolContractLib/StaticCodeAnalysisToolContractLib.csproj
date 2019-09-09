@@ -44,5 +44,11 @@
     <Compile Include="IStaticCodeAnalysisTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IStaticCodeAnalysisToolParser\StaticCodeAnalysisToolParserContractLib.csproj">
+      <Project>{3413d4c5-6d06-4814-a53e-27783d7437dc}</Project>
+      <Name>StaticCodeAnalysisToolParserContractLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

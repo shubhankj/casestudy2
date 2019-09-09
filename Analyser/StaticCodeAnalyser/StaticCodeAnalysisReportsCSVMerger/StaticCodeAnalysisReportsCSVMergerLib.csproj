@@ -45,9 +45,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IStaticCodeAnalysisToolParser\IStaticCodeAnalysisToolParserLib.csproj">
+    <ProjectReference Include="..\IStaticCodeAnalysisToolParser\StaticCodeAnalysisToolParserContractLib.csproj">
       <Project>{3413d4c5-6d06-4814-a53e-27783d7437dc}</Project>
-      <Name>IStaticCodeAnalysisToolParserLib</Name>
+      <Name>StaticCodeAnalysisToolParserContractLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\PMDReportParserLib\PMDReportParserLib.csproj">
       <Project>{8f857967-73be-44ec-ab01-9e5316170123}</Project>

@@ -11,15 +11,26 @@ namespace StaticCodeAnalysisReportsCSVMergerLib
 {
     public class StaticCodeAnalysisReportsCSVMerger
     {
-        public void WriteReportsToCSV(Queue<string> reports, string outfile)
+        public void WriteReportsToCSV(Dictionary<IStaticCodeAnalysisToolParser, string> reports, string outfile)
         {
             IStaticCodeAnalysisToolParser parser;
-            while (reports.Count > 0)
+            for (int i=0; i<reports.Count; i++)
             {
-                string[] lines = File.ReadAllLines(reports.Dequeue());
-                parser = new PMDReportParser();
+                string[] lines = File.ReadAllLines(reports.ElementAt(i).Value);
+                parser = reports.ElementAt(i).Key;
                 lines = parser.ParseReportToCSV(lines);
 
+                FileStream f = new FileStream(outfile, FileMode.OpenOrCreate);
+                StreamWriter s = new StreamWriter(f);
+                f.Seek(f.Length, SeekOrigin.Begin);
+
+                foreach (string line in lines)
+                {
+                    s.WriteLine(line);
+                }
+
+                s.Close();
+                f.Close();
             }
         }
     }

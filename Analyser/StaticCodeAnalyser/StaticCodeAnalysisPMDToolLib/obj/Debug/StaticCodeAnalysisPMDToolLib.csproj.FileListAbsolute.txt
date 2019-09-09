@@ -7,3 +7,7 @@ C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDT
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\obj\Debug\StaticCodeAnalysisPMDToolLib.csproj.CopyComplete
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\obj\Debug\StaticCodeAnalysisPMDToolLib.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\obj\Debug\StaticCodeAnalysisPMDToolLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\bin\Debug\PMDReportParserLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\bin\Debug\StaticCodeAnalysisToolParserContractLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\bin\Debug\StaticCodeAnalysisToolParserContractLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisPMDToolLib\bin\Debug\PMDReportParserLib.pdb

@@ -7,28 +7,33 @@ using System.Text;
 using System.Threading.Tasks;
 using StaticCodeAnalysisToolContractLib;
 using StaticCodeAnalysisReportsCSVMergerLib;
+using IStaticCodeAnalysisToolParserLib;
 
 namespace StaticCodeAnalysisControllerLib
 {
     public class StaticCodeAnalysisController
     {
-        private Queue<string> reportsQueue;
+        private Dictionary<IStaticCodeAnalysisToolParser, string> reportsQueue;
 
         public StaticCodeAnalysisController()
         {
-            reportsQueue = new Queue<string>();
+            reportsQueue = new Dictionary<IStaticCodeAnalysisToolParser, string>();
         }
         public int AnalyseUsingTool(IStaticCodeAnalysisTool tool, string batFilePath, string codeDirectoryPath, string reportFilePath)
         {
-            reportsQueue.Enqueue(reportFilePath);       //  Changes Required
+            reportsQueue.Add(tool.GetParserObject(),reportFilePath);       //  Changes Required
             return tool.Analyse(batFilePath, codeDirectoryPath, reportFilePath);
         }
 
         public void Merge(string outfile)
         {
-            StaticCodeAnalysisReportsCSVMerger merger = new StaticCodeAnalysisReportsCSVMerger();
-            merger.WriteReportsToCSV(reportsQueue, outfile);
+            if (reportsQueue.Count > 0)
+            {
+                StaticCodeAnalysisReportsCSVMerger merger = new StaticCodeAnalysisReportsCSVMerger();
+                merger.WriteReportsToCSV(reportsQueue, outfile);
+            }
         }
+
         //public int MergeReports(string[] reports, string outfile)
         //{
         //    int status1 = 1, status2 = 1;

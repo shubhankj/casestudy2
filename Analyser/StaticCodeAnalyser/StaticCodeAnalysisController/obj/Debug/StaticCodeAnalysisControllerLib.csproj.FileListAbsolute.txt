@@ -8,8 +8,6 @@ C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisCont
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\obj\Debug\StaticCodeAnalysisController.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\obj\Debug\StaticCodeAnalysisController.pdb
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\bin\Debug\StaticCodeAnalysisReportsCSVMergerLib.dll
-C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\bin\Debug\IStaticCodeAnalysisToolParserLib.dll
-C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\bin\Debug\PMDReportParserLib.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\bin\Debug\StaticCodeAnalysisReportsCSVMergerLib.pdb
-C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\bin\Debug\IStaticCodeAnalysisToolParserLib.pdb
-C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\bin\Debug\PMDReportParserLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\bin\Debug\StaticCodeAnalysisToolParserContractLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisController\bin\Debug\StaticCodeAnalysisToolParserContractLib.pdb

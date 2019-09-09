@@ -4,3 +4,6 @@ C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisTool
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisToolContractLib\obj\Debug\StaticCodeAnalysisToolContractLib.csproj.CoreCompileInputs.cache
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisToolContractLib\obj\Debug\StaticCodeAnalysisToolContractLib.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisToolContractLib\obj\Debug\StaticCodeAnalysisToolContractLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisToolContractLib\bin\Debug\StaticCodeAnalysisToolParserContractLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisToolContractLib\bin\Debug\StaticCodeAnalysisToolParserContractLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisToolContractLib\obj\Debug\StaticCodeAnalysisToolContractLib.csproj.CopyComplete

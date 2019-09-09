@@ -45,6 +45,10 @@
     <Compile Include="StaticCodeAnalysisController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\IStaticCodeAnalysisToolParser\StaticCodeAnalysisToolParserContractLib.csproj">
+      <Project>{3413d4c5-6d06-4814-a53e-27783d7437dc}</Project>
+      <Name>StaticCodeAnalysisToolParserContractLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StaticCodeAnalysisReportsCSVMerger\StaticCodeAnalysisReportsCSVMergerLib.csproj">
       <Project>{70f83f56-6f6f-4613-bc77-4b6732bb8f2a}</Project>
       <Name>StaticCodeAnalysisReportsCSVMergerLib</Name>
