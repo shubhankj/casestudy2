@@ -9,7 +9,6 @@ namespace StaticCodeAnalysisToolContractLib
 {
     public interface IStaticCodeAnalysisTool
     {
-        int Analyse(string batFilePath, string codeDirectoryPath, string reportFilePath);
-        IStaticCodeAnalysisToolParser GetParserObject();
+        string Analyse(string codeDirectoryPath);
     }
 }

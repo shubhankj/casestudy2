@@ -13,7 +13,12 @@ namespace PMDToolWebService
     public interface IPMDToolService
     {
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/RunPMDTool", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
-        string RunPMDTool();
+        [WebInvoke(Method = "GET", UriTemplate = "/RunPMDTool/{batFilePath}/{sampleCodeDirectory}/{finalReportPath}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
+        bool RunPMDTool(string batFilePath, string sampleCodeDirectory, string finalReportPath);
+
+
+        //[OperationContract]
+        //[WebInvoke(Method = "GET", UriTemplate = "/RunPMDTool", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
+        //string RunPMDTool();
     }
 }

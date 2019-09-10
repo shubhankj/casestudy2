@@ -59,6 +59,10 @@
       <Project>{6bdeb7fd-2ddc-447d-9d86-2db6a2de376e}</Project>
       <Name>StaticCodeAnalysisPMDToolLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StaticCodeAnalysisSchedulerLib\StaticCodeAnalysisSchedulerLib.csproj">
+      <Project>{9004cc6a-e575-415d-8913-0726c7970983}</Project>
+      <Name>StaticCodeAnalysisSchedulerLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StaticCodeAnalysisToolContractLib\StaticCodeAnalysisToolContractLib.csproj">
       <Project>{2e423122-1768-413c-b473-04f1ec6e2e44}</Project>
       <Name>StaticCodeAnalysisToolContractLib</Name>

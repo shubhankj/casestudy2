@@ -18,3 +18,5 @@ C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\obj
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\obj\Debug\StaticCodeAnalyser.pdb
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisToolParserContractLib.dll
 C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisToolParserContractLib.pdb
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisSchedulerLib.dll
+C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalyser\bin\Debug\StaticCodeAnalysisSchedulerLib.pdb

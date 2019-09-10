@@ -11,13 +11,9 @@ namespace StaticCodeAnalysisReportsCSVMergerLib
 {
     public class StaticCodeAnalysisReportsCSVMerger
     {
-        public void WriteReportsToCSV(Dictionary<IStaticCodeAnalysisToolParser, string> reports, string outfile)
+        public void WriteReportsToCSV(IStaticCodeAnalysisToolParser parser, string report, string outfile)
         {
-            IStaticCodeAnalysisToolParser parser;
-            for (int i=0; i<reports.Count; i++)
-            {
-                string[] lines = File.ReadAllLines(reports.ElementAt(i).Value);
-                parser = reports.ElementAt(i).Key;
+                string[] lines = File.ReadAllLines(report);
                 lines = parser.ParseReportToCSV(lines);
 
                 FileStream f = new FileStream(outfile, FileMode.OpenOrCreate);
@@ -31,7 +27,6 @@ namespace StaticCodeAnalysisReportsCSVMergerLib
 
                 s.Close();
                 f.Close();
-            }
         }
     }
 }

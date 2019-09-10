@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9004CC6A-E575-415D-8913-0726C7970983}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StaticCodeAnalysisSchedulerLib</RootNamespace>
+    <AssemblyName>StaticCodeAnalysisSchedulerLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StaticCodeAnalysisScheduler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IStaticCodeAnalysisToolParser\StaticCodeAnalysisToolParserContractLib.csproj">
+      <Project>{3413d4c5-6d06-4814-a53e-27783d7437dc}</Project>
+      <Name>StaticCodeAnalysisToolParserContractLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMDReportParserLib\PMDReportParserLib.csproj">
+      <Project>{8f857967-73be-44ec-ab01-9e5316170123}</Project>
+      <Name>PMDReportParserLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StaticCodeAnalysisController\StaticCodeAnalysisControllerLib.csproj">
+      <Project>{aa433e64-c747-4e03-bf36-b075c0a68021}</Project>
+      <Name>StaticCodeAnalysisControllerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StaticCodeAnalysisPMDToolLib\StaticCodeAnalysisPMDToolLib.csproj">
+      <Project>{6bdeb7fd-2ddc-447d-9d86-2db6a2de376e}</Project>
+      <Name>StaticCodeAnalysisPMDToolLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StaticCodeAnalysisToolContractLib\StaticCodeAnalysisToolContractLib.csproj">
+      <Project>{2e423122-1768-413c-b473-04f1ec6e2e44}</Project>
+      <Name>StaticCodeAnalysisToolContractLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

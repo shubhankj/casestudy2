@@ -13,48 +13,15 @@ namespace StaticCodeAnalysisControllerLib
 {
     public class StaticCodeAnalysisController
     {
-        private Dictionary<IStaticCodeAnalysisToolParser, string> reportsQueue;
-
-        public StaticCodeAnalysisController()
+        public string AnalyseUsingTool(IStaticCodeAnalysisTool tool, string codeDirectoryPath)
         {
-            reportsQueue = new Dictionary<IStaticCodeAnalysisToolParser, string>();
-        }
-        public int AnalyseUsingTool(IStaticCodeAnalysisTool tool, string batFilePath, string codeDirectoryPath, string reportFilePath)
-        {
-            reportsQueue.Add(tool.GetParserObject(),reportFilePath);       //  Changes Required
-            return tool.Analyse(batFilePath, codeDirectoryPath, reportFilePath);
+            return tool.Analyse(codeDirectoryPath);
         }
 
-        public void Merge(string outfile)
+        public void Merge(IStaticCodeAnalysisToolParser parser, string report, string outfile)
         {
-            if (reportsQueue.Count > 0)
-            {
                 StaticCodeAnalysisReportsCSVMerger merger = new StaticCodeAnalysisReportsCSVMerger();
-                merger.WriteReportsToCSV(reportsQueue, outfile);
-            }
+                merger.WriteReportsToCSV(parser, report, outfile);
         }
-
-        //public int MergeReports(string[] reports, string outfile)
-        //{
-        //    int status1 = 1, status2 = 1;
-        //    try
-        //    {
-        //        System.IO.File.WriteAllText(outfile, string.Empty);
-        //        status1 = Utility.WriteFileToCSV(file1, outfile);
-
-        //        status2 = Utility.WriteFileToCSV(file2, outfile);
-
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //        Console.WriteLine("Cannot merge reports");
-        //        return 1;
-        //    }
-        //    if (status1 == 0 && status2 == 0)
-        //        return 0;
-        //    else
-        //        return 1;
-        //}
     }
 }

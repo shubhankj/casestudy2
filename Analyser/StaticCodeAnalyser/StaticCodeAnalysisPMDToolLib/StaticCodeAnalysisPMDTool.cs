@@ -12,21 +12,13 @@ namespace StaticCodeAnalysisPMDToolLib
 {
     public class StaticCodeAnalysisPMDTool : IStaticCodeAnalysisTool
     {
-        private string _rulesetFilePath;// = @"..\..\pmd-bin-6.16.0\bin\rulesets\java\quickstart.xml";
+        private string _rulesetFilePath = @"pmd-bin-6.16.0\bin\rulesets\java\quickstart.xml";
+        private string _batFilePath = @"pmd-bin-6.16.0\bin\pmd.bat";
+        private string _reportFilePath = @"PMDReport.txt";
 
-        public StaticCodeAnalysisPMDTool(string rulesetFilePath)
+        public string Analyse(string codeDirectoryPath)
         {
-            _rulesetFilePath = rulesetFilePath;
-        }
-
-        public IStaticCodeAnalysisToolParser GetParserObject()
-        {
-            return new PMDReportParser();
-        }
-
-        public int Analyse(string batFilePath, string codeDirectoryPath, string reportFilePath)
-        {
-            string command = batFilePath + " -d " + codeDirectoryPath + @" -f text -R " + _rulesetFilePath + " -r " + reportFilePath ;
+            string command = _batFilePath + " -d " + codeDirectoryPath + @" -f text -R " + _rulesetFilePath + " -r " + _reportFilePath ;
 
             try
             {
@@ -42,14 +34,13 @@ namespace StaticCodeAnalysisPMDToolLib
                 cmd.StandardInput.Flush();
                 cmd.StandardInput.Close();
                 cmd.WaitForExit();
-                
-                return cmd.ExitCode;
+                return _reportFilePath;
             }
 
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                return -1;
+                return string.Empty;
             }
         }
     }

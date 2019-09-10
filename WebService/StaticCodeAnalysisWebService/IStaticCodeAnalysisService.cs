@@ -13,11 +13,15 @@ namespace StaticCodeAnalysisWebService
     public interface IStaticCodeAnalysisService
     {
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/AnalyseCode/Absolute/{threshold}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
-        string AnalyseCode(string threshold);
+        [WebInvoke(Method = "GET", UriTemplate = "/AnalyseCodeUsingPMD/Absolute/{threshold}/{batFilePath}/{sampleCodeDirectory}/{finalReportPath}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
+        string AnalyseCodeUsingPMDTool(string threshold, string batFilePath, string sampleCodeDirectory, string finalReportPath);
 
-        [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/AnalyseCode/Relative", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
-        string AnalyseCodeAuto();
+        //[OperationContract]
+        //[WebInvoke(Method = "GET", UriTemplate = "/AnalyseCode/Absolute/{threshold}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
+        //string AnalyseCode(string threshold);
+
+        //[OperationContract]
+        //[WebInvoke(Method = "GET", UriTemplate = "/AnalyseCode/Relative", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
+        //string AnalyseCodeAuto();
     }
 }
