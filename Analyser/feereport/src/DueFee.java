@@ -1,14 +1,14 @@
 package com.javatpoint.feereport;
 
-import java.awt.BorderLayout;
+//import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.util.List;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
+//import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.border.EmptyBorder;
+//import javax.swing.border.EmptyBorder;
 
 public class DueFee extends JFrame {
 	static DueFee frame;

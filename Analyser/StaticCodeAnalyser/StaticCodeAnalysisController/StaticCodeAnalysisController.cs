@@ -18,10 +18,10 @@ namespace StaticCodeAnalysisControllerLib
             return tool.Analyse(codeDirectoryPath);
         }
 
-        public void Merge(IStaticCodeAnalysisToolParser parser, string report, string outfile)
+        public bool Merge(IStaticCodeAnalysisToolParser parser, string report, string outfile)
         {
                 StaticCodeAnalysisReportsCSVMerger merger = new StaticCodeAnalysisReportsCSVMerger();
-                merger.WriteReportsToCSV(parser, report, outfile);
+                return merger.WriteReportsToCSV(parser, report, outfile);
         }
     }
 }

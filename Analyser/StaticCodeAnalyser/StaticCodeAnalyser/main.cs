@@ -23,11 +23,12 @@ namespace StaticCodeAnalyzer
             //controller.Merge(outputFile);         DO THIS USING SCHEDULER
 
             StaticCodeAnalysisScheduler scheduler = new StaticCodeAnalysisScheduler();
-            scheduler.RunAnalysisWithAllTools(sampleCodeDirectory, outputFile);
+            if (scheduler.RunAnalysisWithAllTools(sampleCodeDirectory, outputFile))
+                return 0;
 
             //scheduler.RunAnalysisWithPMD(sampleCodeDirectory, outputFile);
 
-            return 0;
+            return -1;
         }
 
     }

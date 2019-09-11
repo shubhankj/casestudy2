@@ -26,20 +26,21 @@ namespace StaticCodeAnalysisSchedulerLib
             _toolToParserMap.Add(_pMDTool, _pMDReportParser);
         }
 
-        public void RunAnalysisWithAllTools(string codeDirectoryPath, string outReportFilePath)
+        public bool RunAnalysisWithAllTools(string codeDirectoryPath, string outReportFilePath)
         {
             StaticCodeAnalysisController controller = new StaticCodeAnalysisController();
             File.Delete(outReportFilePath);
-
+            bool status = true;
             for(int i=0; i<_toolToParserMap.Count; i++)
             {
                 string tempReportPath = controller.AnalyseUsingTool(_toolToParserMap.ElementAt(i).Key, codeDirectoryPath);
 
-                controller.Merge(_toolToParserMap.ElementAt(i).Value, tempReportPath, outReportFilePath);
+                status &= controller.Merge(_toolToParserMap.ElementAt(i).Value, tempReportPath, outReportFilePath);
             }
+            return status;
         }
 
-        public void RunAnalysisWithPMD(string codeDirectoryPath, string outReportFilePath)
+        public bool RunAnalysisWithPMD(string codeDirectoryPath, string outReportFilePath)
         {
             IStaticCodeAnalysisTool tool = _pMDTool;
             StaticCodeAnalysisController controller = new StaticCodeAnalysisController();
@@ -47,7 +48,7 @@ namespace StaticCodeAnalysisSchedulerLib
 
             string tempReportPath = controller.AnalyseUsingTool(tool, codeDirectoryPath);
 
-            controller.Merge(_toolToParserMap[tool], tempReportPath, outReportFilePath);
+            return controller.Merge(_toolToParserMap[tool], tempReportPath, outReportFilePath);
         }
     }
 }

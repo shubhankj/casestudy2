@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="StaticCodeAnalysisGatingWebService.StaticCodeAnalysisGatingService" CodeBehind="StaticCodeAnalysisGatingService.svc.cs" %>
