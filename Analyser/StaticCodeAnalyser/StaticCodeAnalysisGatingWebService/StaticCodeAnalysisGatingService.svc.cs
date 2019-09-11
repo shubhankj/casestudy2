@@ -14,62 +14,69 @@ namespace StaticCodeAnalysisGatingWebService
     // NOTE: In order to launch WCF Test Client for testing this service, please select StaticCodeAnalysisService.svc or StaticCodeAnalysisService.svc.cs at the Solution Explorer and start debugging.
     public class StaticCodeAnalysisGatingService : IStaticCodeAnalysisGatingService
     {
-        private string _noOfErrorsFilePath = @"C:\Users\320052125\casestudy2\Analyser\Errors.txt";
+        private string _noOfErrorsFilePath = @"C:\Users\320052125\casestudy2\Analyser\Errors.txt";  // set this path to the project directory
+        private StaticCodeAnalysisToolsService _toolsService;
+
+        public StaticCodeAnalysisGatingService()
+        {
+            _toolsService = new StaticCodeAnalysisToolsService();
+        }
 
         public string GateErrors(string threshold, string sampleCodeDirectory, string finalReportPath)
         {
-            throw new NotImplementedException();
+            bool status = _toolsService.RunAllTools(sampleCodeDirectory, finalReportPath);
+            if (status)
+            {
+                return CompareNoOfErrors(int.Parse(threshold), finalReportPath);
+            }
+            return "error";
         }
-
+        
         public string GateErrorsRelatively(string sampleCodeDirectory, string finalReportPath)
         {
-            throw new NotImplementedException();
+            int lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+            bool status = _toolsService.RunAllTools(sampleCodeDirectory, finalReportPath);
+            if (status)
+            {
+                return CompareNoOfErrors(lastLine, finalReportPath);
+            }
+            return "error";
         }
 
         public string GateErrorsUsingPMDTool(string threshold, string sampleCodeDirectory, string finalReportPath)
         {
-            StaticCodeAnalysisToolsService ToolsService = new StaticCodeAnalysisToolsService();
-            bool status = ToolsService.RunPMDTool(sampleCodeDirectory, finalReportPath);
+            bool status = _toolsService.RunPMDTool(sampleCodeDirectory, finalReportPath);
             if (status)
             {
-                int NoOfErrors = File.ReadLines(finalReportPath).Count();
-                var file = File.Open(_noOfErrorsFilePath, FileMode.OpenOrCreate);
-                using (StreamWriter sw = new StreamWriter(file))
-                {
-                    file.Seek(file.Length, SeekOrigin.Begin);
-                    sw.WriteLine(NoOfErrors);
-
-                    if (NoOfErrors > Convert.ToInt32(threshold))
-                        return "no";
-
-                    return "yes";
-                }
+                return CompareNoOfErrors(int.Parse(threshold), finalReportPath);
             }
             return "error";
         }
 
         public string GateErrorsUsingPMDToolRelatively(string sampleCodeDirectory, string finalReportPath)
         {
-            StaticCodeAnalysisToolsService ToolsService = new StaticCodeAnalysisToolsService();
-            bool status = ToolsService.RunPMDTool(sampleCodeDirectory, finalReportPath);
+            int lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+            bool status = _toolsService.RunPMDTool(sampleCodeDirectory, finalReportPath);
             if (status)
             {
-                int NoOfErrors = File.ReadLines(finalReportPath).Count();
-                int lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
-                var file = File.Open(_noOfErrorsFilePath, FileMode.OpenOrCreate);
-                using (StreamWriter sw = new StreamWriter(file))
-                {
-                    file.Seek(file.Length, SeekOrigin.Begin);
-                    sw.WriteLine(NoOfErrors);
-
-                    if (NoOfErrors > Convert.ToInt32(lastLine))
-                        return "no";
-
-                    return "yes";
-                }
+                return CompareNoOfErrors(lastLine, finalReportPath);
             }
             return "error";
         }
-        
+
+        private string CompareNoOfErrors(int threshold, string finalReportPath)
+        {
+            int NoOfErrors = File.ReadLines(finalReportPath).Count();
+            var file = File.Open(_noOfErrorsFilePath, FileMode.OpenOrCreate);
+            using (StreamWriter sw = new StreamWriter(file))
+            {
+                file.Seek(file.Length, SeekOrigin.Begin);
+                sw.WriteLine(NoOfErrors);
+                if (NoOfErrors > threshold)
+                    return "no";
+                return "yes";
+            }
+        }
+
     }
 }

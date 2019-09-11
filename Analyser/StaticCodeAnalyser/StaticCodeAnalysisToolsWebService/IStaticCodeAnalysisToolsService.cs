@@ -17,8 +17,8 @@ namespace StaticCodeAnalysisToolsWebService
         bool RunPMDTool(string sampleCodeDirectory, string finalReportPath);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/RunAllTools", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
-        string RunAllTools(string sampleCodeDirectory, string finalReportPath);
+        [WebInvoke(Method = "GET", UriTemplate = "/RunAllTools/{sampleCodeDirectory}/{finalReportPath}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
+        bool RunAllTools(string sampleCodeDirectory, string finalReportPath);
 
         //[OperationContract]
         //[WebInvoke(Method = "GET", UriTemplate = "/RunPMDTool", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]

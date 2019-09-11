@@ -13,9 +13,11 @@ namespace StaticCodeAnalysisToolsWebService
     // NOTE: In order to launch WCF Test Client for testing this service, please select PMDToolService.svc or PMDToolService.svc.cs at the Solution Explorer and start debugging.
     public class StaticCodeAnalysisToolsService : IStaticCodeAnalysisToolsService
     {
-        public string RunAllTools(string sampleCodeDirectory, string finalReportPath)
+        public bool RunAllTools(string sampleCodeDirectory, string finalReportPath)
         {
-            throw new NotImplementedException();
+            Directory.SetCurrentDirectory(@"C:\Users\320052125\casestudy2\Analyser");        //Set this path to the project folder
+            StaticCodeAnalysisScheduler scheduler = new StaticCodeAnalysisScheduler();
+            return scheduler.RunAnalysisWithAllTools(sampleCodeDirectory, finalReportPath);
         }
 
         public bool RunPMDTool(string sampleCodeDirectory, string finalReportPath)
