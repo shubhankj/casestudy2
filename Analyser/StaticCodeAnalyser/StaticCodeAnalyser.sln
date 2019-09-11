@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalyser", "StaticCodeAnalyser\StaticCodeAnalyser.csproj", "{68062363-BC66-4A31-8013-41B008975E48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisClientLib", "StaticCodeAnalyser\StaticCodeAnalysisClientLib.csproj", "{68062363-BC66-4A31-8013-41B008975E48}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisControllerLib", "StaticCodeAnalysisController\StaticCodeAnalysisControllerLib.csproj", "{AA433E64-C747-4E03-BF36-B075C0A68021}"
 EndProject

@@ -7,17 +7,21 @@ using System.Threading.Tasks;
 using StaticCodeAnalysisToolContractLib;
 using IStaticCodeAnalysisToolParserLib;
 using PMDReportParserLib;
+using System.IO;
 
 namespace StaticCodeAnalysisPMDToolLib
 {
     public class StaticCodeAnalysisPMDTool : IStaticCodeAnalysisTool
     {
-        private string _rulesetFilePath = @"pmd-bin-6.16.0\bin\rulesets\java\quickstart.xml";
+        private string _rulesetFilePath = @"pmd-bin-6.16.0\bin\rulesets\java\quickstart.xml";   //
         private string _batFilePath = @"pmd-bin-6.16.0\bin\pmd.bat";
         private string _reportFilePath = @"PMDReport.txt";
 
         public string Analyse(string codeDirectoryPath)
         {
+            if (!Directory.Exists(codeDirectoryPath))
+                return string.Empty;
+
             string command = _batFilePath + " -d " + codeDirectoryPath + @" -f text -R " + _rulesetFilePath + " -r " + _reportFilePath ;
 
             try
