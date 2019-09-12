@@ -34,7 +34,10 @@ namespace StaticCodeAnalysisGatingWebService
         
         public string GateErrorsRelatively(string sampleCodeDirectory, string finalReportPath)
         {
-            int lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+            int lastLine = 0;
+            if (File.Exists(_noOfErrorsFilePath) && File.ReadLines(_noOfErrorsFilePath).Count() > 0)
+                lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+            
             bool status = _toolsService.RunAllTools(sampleCodeDirectory, finalReportPath);
             if (status)
             {
@@ -55,7 +58,10 @@ namespace StaticCodeAnalysisGatingWebService
 
         public string GateErrorsUsingPMDToolRelatively(string sampleCodeDirectory, string finalReportPath)
         {
-            int lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+            int lastLine = 0;
+            if (File.Exists(_noOfErrorsFilePath) && File.ReadLines(_noOfErrorsFilePath).Count() > 0)
+                lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+
             bool status = _toolsService.RunPMDTool(sampleCodeDirectory, finalReportPath);
             if (status)
             {
@@ -73,8 +79,8 @@ namespace StaticCodeAnalysisGatingWebService
                 file.Seek(file.Length, SeekOrigin.Begin);
                 sw.WriteLine(NoOfErrors);
                 if (NoOfErrors > threshold)
-                    return "no";
-                return "yes";
+                    return "Static Code Analysis Gating Failed!";
+                return "Static Code Analysis Gating Passed Successfully!";
             }
         }
 
