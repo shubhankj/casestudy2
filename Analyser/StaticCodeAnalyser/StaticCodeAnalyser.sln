@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisLib.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisWebServicesLib.Tests", "StaticCodeAnalysisWebServicesLib.Tests\StaticCodeAnalysisWebServicesLib.Tests.csproj", "{B38CDD6B-75B7-4571-BEFB-B75396E50FAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisGatingServiceLib.Tests", "StaticCodeAnalysisGatingServiceLib.Tests\StaticCodeAnalysisGatingServiceLib.Tests.csproj", "{511E2DAE-6242-4382-B842-BF854EA08702}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{B38CDD6B-75B7-4571-BEFB-B75396E50FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B38CDD6B-75B7-4571-BEFB-B75396E50FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B38CDD6B-75B7-4571-BEFB-B75396E50FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{511E2DAE-6242-4382-B842-BF854EA08702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511E2DAE-6242-4382-B842-BF854EA08702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511E2DAE-6242-4382-B842-BF854EA08702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511E2DAE-6242-4382-B842-BF854EA08702}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,7 +14,7 @@ namespace StaticCodeAnalysisGatingWebService
     // NOTE: In order to launch WCF Test Client for testing this service, please select StaticCodeAnalysisService.svc or StaticCodeAnalysisService.svc.cs at the Solution Explorer and start debugging.
     public class StaticCodeAnalysisGatingService : IStaticCodeAnalysisGatingService
     {
-        private string _noOfErrorsFilePath = @"C:\Users\320052125\casestudy2\Analyser\Errors.txt";  // set this path to the project directory
+        private string _noOfErrorsFilePath = @"C:\Users\320052123\casestudy2\Analyser\Errors.txt";  // set this path to the project directory
         private StaticCodeAnalysisToolsService _toolsService;
 
         public StaticCodeAnalysisGatingService()
