@@ -8,7 +8,7 @@ using StaticCodeAnalysisSchedulerLib;
 
 namespace StaticCodeAnalysisClientLib
 {
-    public class StaticCodeAnalysisClient
+    public static class StaticCodeAnalysisClient
     {
         public static int Main(string[] args)
         {
@@ -16,15 +16,9 @@ namespace StaticCodeAnalysisClientLib
             string sampleCodeDirectory = @"feereport";
             string outputFile = @"FinalReport.csv";
 
-            //StaticCodeAnalysisController controller = new StaticCodeAnalysisController();
-            //controller.AnalyseUsingTool(pMDTool, pMDBatFile, sampleCodeDirectory);
-            //controller.Merge(outputFile);         DO THIS USING SCHEDULER
-
             StaticCodeAnalysisScheduler scheduler = new StaticCodeAnalysisScheduler();
             if (scheduler.RunAnalysisWithAllTools(sampleCodeDirectory, outputFile))
                 return 0;
-
-            //scheduler.RunAnalysisWithPMD(sampleCodeDirectory, outputFile);
 
             return -1;
         }

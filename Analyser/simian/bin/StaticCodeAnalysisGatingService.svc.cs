@@ -14,7 +14,7 @@ namespace StaticCodeAnalysisGatingWebService
     // NOTE: In order to launch WCF Test Client for testing this service, please select StaticCodeAnalysisService.svc or StaticCodeAnalysisService.svc.cs at the Solution Explorer and start debugging.
     public class StaticCodeAnalysisGatingService : IStaticCodeAnalysisGatingService
     {
-        private string _noOfErrorsFilePath = @"C:\Users\320052125\casestudy2\Analyser\Errors.txt";  // set this path to the project directory
+        private readonly string _noOfErrorsFilePath = @"C:\Users\320052125\casestudy2\Analyser\Errors.txt";  // set this path to the project directory
         private StaticCodeAnalysisToolsService _toolsService;
 
         public StaticCodeAnalysisGatingService()
@@ -34,7 +34,10 @@ namespace StaticCodeAnalysisGatingWebService
         
         public string GateErrorsRelatively(string sampleCodeDirectory, string finalReportPath)
         {
-            int lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+            int lastLine = 0;
+            if (File.Exists(_noOfErrorsFilePath) && File.ReadLines(_noOfErrorsFilePath).Any())
+                lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+            
             bool status = _toolsService.RunAllTools(sampleCodeDirectory, finalReportPath);
             if (status)
             {
@@ -55,7 +58,10 @@ namespace StaticCodeAnalysisGatingWebService
 
         public string GateErrorsUsingPMDToolRelatively(string sampleCodeDirectory, string finalReportPath)
         {
-            int lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+            int lastLine = 0;
+            if (File.Exists(_noOfErrorsFilePath) && File.ReadLines(_noOfErrorsFilePath).Any())
+                lastLine = Convert.ToInt32(File.ReadLines(_noOfErrorsFilePath).Last());
+
             bool status = _toolsService.RunPMDTool(sampleCodeDirectory, finalReportPath);
             if (status)
             {
@@ -73,8 +79,8 @@ namespace StaticCodeAnalysisGatingWebService
                 file.Seek(file.Length, SeekOrigin.Begin);
                 sw.WriteLine(NoOfErrors);
                 if (NoOfErrors > threshold)
-                    return "no";
-                return "yes";
+                    return "Static Code Analysis Gating Failed!";
+                return "Static Code Analysis Gating Passed Successfully!";
             }
         }
 

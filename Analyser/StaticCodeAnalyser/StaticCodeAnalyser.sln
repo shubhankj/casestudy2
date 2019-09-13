@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisReportsCS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisToolParserContractLib", "IStaticCodeAnalysisToolParser\StaticCodeAnalysisToolParserContractLib.csproj", "{3413D4C5-6D06-4814-A53E-27783D7437DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMDReportParserLib", "PMDReportParserLib\PMDReportParserLib.csproj", "{8F857967-73BE-44EC-AB01-9E5316170123}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisPMDReportParserLib", "PMDReportParserLib\StaticCodeAnalysisPMDReportParserLib.csproj", "{8F857967-73BE-44EC-AB01-9E5316170123}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisSchedulerLib", "StaticCodeAnalysisSchedulerLib\StaticCodeAnalysisSchedulerLib.csproj", "{9004CC6A-E575-415D-8913-0726C7970983}"
 EndProject
@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisToolsWebS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisLib.Tests", "StaticCodeAnalysisLib.Tests\StaticCodeAnalysisLib.Tests.csproj", "{36587310-A3A8-44DC-906B-D13BDF0514F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisWebServicesLib.Tests", "StaticCodeAnalysisWebServicesLib.Tests\StaticCodeAnalysisWebServicesLib.Tests.csproj", "{B38CDD6B-75B7-4571-BEFB-B75396E50FAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisToolsWebServiceLib.Tests", "StaticCodeAnalysisWebServicesLib.Tests\StaticCodeAnalysisToolsWebServiceLib.Tests.csproj", "{B38CDD6B-75B7-4571-BEFB-B75396E50FAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCodeAnalysisGatingServiceLib.Tests", "StaticCodeAnalysisGatingServiceLib.Tests\StaticCodeAnalysisGatingServiceLib.Tests.csproj", "{511E2DAE-6242-4382-B842-BF854EA08702}"
 EndProject

@@ -49,9 +49,9 @@
       <Project>{3413D4C5-6D06-4814-A53E-27783D7437DC}</Project>
       <Name>StaticCodeAnalysisToolParserContractLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PMDReportParserLib\PMDReportParserLib.csproj">
+    <ProjectReference Include="..\PMDReportParserLib\StaticCodeAnalysisPMDReportParserLib.csproj">
       <Project>{8f857967-73be-44ec-ab01-9e5316170123}</Project>
-      <Name>PMDReportParserLib</Name>
+      <Name>StaticCodeAnalysisPMDReportParserLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\StaticCodeAnalysisToolContractLib\StaticCodeAnalysisToolContractLib.csproj">
       <Project>{2e423122-1768-413c-b473-04f1ec6e2e44}</Project>

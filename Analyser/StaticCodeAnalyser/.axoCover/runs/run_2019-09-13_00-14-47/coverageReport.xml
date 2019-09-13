@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.6.0.0">
+  <Summary numSequencePoints="12" visitedSequencePoints="6" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="50" branchCoverage="50" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
+  <Modules>
+    <Module hash="22-22-3B-96-EF-B8-EF-F1-17-C2-6C-4A-3C-3B-0B-85-2A-97-7D-D2">
+      <Summary numSequencePoints="12" visitedSequencePoints="6" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="50" branchCoverage="50" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
+      <ModulePath>C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisWebServicesLib.Tests\bin\Debug\StaticCodeAnalysisToolsWebServiceLib.Tests.dll</ModulePath>
+      <ModuleTime>2019-09-12T18:38:09.1214384Z</ModuleTime>
+      <ModuleName>StaticCodeAnalysisToolsWebServiceLib.Tests</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\320052125\casestudy2\Analyser\StaticCodeAnalyser\StaticCodeAnalysisWebServicesLib.Tests\StaticCodeAnalysisToolsServiceUnitTest.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="6" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="50" branchCoverage="50" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
+          <FullName>StaticCodeAnalysisWebServicesLib.Tests.StaticCodeAnalysisToolsServiceUnitTest</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Void StaticCodeAnalysisWebServicesLib.Tests.StaticCodeAnalysisToolsServiceUnitTest::Given_Valid_Parameters_When_RunAllTools_Is_Invoked_Then_True_Asserted()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="1" ordinal="0" offset="0" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="2" ordinal="1" offset="1" sl="13" sc="13" el="13" ec="42" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="3" ordinal="2" offset="7" sl="14" sc="13" el="14" ec="148" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="4" ordinal="3" offset="19" sl="16" sc="13" el="16" ec="70" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="5" ordinal="4" offset="31" sl="17" sc="13" el="17" ec="30" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="6" ordinal="5" offset="38" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="1" ordinal="0" offset="0" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Void StaticCodeAnalysisWebServicesLib.Tests.StaticCodeAnalysisToolsServiceUnitTest::Given_Valid_Parameters_When_RunPMDTool_Is_Invoked_Then_True_Asserted()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="7" ordinal="0" offset="0" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="8" ordinal="1" offset="1" sl="24" sc="13" el="24" ec="42" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="9" ordinal="2" offset="7" sl="25" sc="13" el="25" ec="147" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="10" ordinal="3" offset="19" sl="27" sc="13" el="27" ec="69" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="11" ordinal="4" offset="31" sl="28" sc="13" el="28" ec="30" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="12" ordinal="5" offset="38" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="7" ordinal="0" offset="0" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="2" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.Void StaticCodeAnalysisWebServicesLib.Tests.StaticCodeAnalysisToolsServiceUnitTest::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="13" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+      <TrackedMethods>
+        <TrackedMethod uid="1" token="100663297" name="System.Void StaticCodeAnalysisWebServicesLib.Tests.StaticCodeAnalysisToolsServiceUnitTest::Given_Valid_Parameters_When_RunAllTools_Is_Invoked_Then_True_Asserted()" strategy="MSTestTest" />
+        <TrackedMethod uid="2" token="100663298" name="System.Void StaticCodeAnalysisWebServicesLib.Tests.StaticCodeAnalysisToolsServiceUnitTest::Given_Valid_Parameters_When_RunPMDTool_Is_Invoked_Then_True_Asserted()" strategy="MSTestTest" />
+      </TrackedMethods>
+    </Module>
+  </Modules>
+</CoverageSession>

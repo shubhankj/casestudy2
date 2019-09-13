@@ -16,12 +16,12 @@ namespace StaticCodeAnalysisSchedulerLib
     {
         private Dictionary<IStaticCodeAnalysisTool, IStaticCodeAnalysisToolParser> _toolToParserMap;
         private StaticCodeAnalysisPMDTool _pMDTool;
-        private PMDReportParser _pMDReportParser;
+        private StaticCodeAnalysisPMDReportParser _pMDReportParser;
 
         public StaticCodeAnalysisScheduler()
         {
             _pMDTool = new StaticCodeAnalysisPMDTool();
-            _pMDReportParser = new PMDReportParser();
+            _pMDReportParser = new StaticCodeAnalysisPMDReportParser();
             _toolToParserMap = new Dictionary<IStaticCodeAnalysisTool, IStaticCodeAnalysisToolParser>();
             _toolToParserMap.Add(_pMDTool, _pMDReportParser);
         }

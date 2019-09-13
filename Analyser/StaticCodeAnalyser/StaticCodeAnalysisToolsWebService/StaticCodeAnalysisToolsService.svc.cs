@@ -15,14 +15,14 @@ namespace StaticCodeAnalysisToolsWebService
     {
         public bool RunAllTools(string sampleCodeDirectory, string finalReportPath)
         {
-            Directory.SetCurrentDirectory(@"C:\Users\320052123\casestudy2\Analyser");        //Set this path to the project folder
+            Directory.SetCurrentDirectory(@"C:\Users\320052125\casestudy2\Analyser");        //Set this path to the project folder
             StaticCodeAnalysisScheduler scheduler = new StaticCodeAnalysisScheduler();
             return scheduler.RunAnalysisWithAllTools(sampleCodeDirectory, finalReportPath);
         }
 
         public bool RunPMDTool(string sampleCodeDirectory, string finalReportPath)
         {
-            Directory.SetCurrentDirectory(@"C:\Users\320052123\casestudy2\Analyser");        //Set this path to the project folder
+            Directory.SetCurrentDirectory(@"C:\Users\320052125\casestudy2\Analyser");        //Set this path to the project folder
             StaticCodeAnalysisScheduler scheduler = new StaticCodeAnalysisScheduler();
             return scheduler.RunAnalysisWithPMD(sampleCodeDirectory, finalReportPath);
 
