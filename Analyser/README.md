@@ -7,3 +7,6 @@ API documentation can be found in Documentation/API_Documentation.docx
 Starting point to run as console application is StaticCodeAnalysisClient project.
 Starting point to run from browser for gating is StaticCodeAnalysisGatingWebService project.
 Starting point to run tools from browser is StaticCodeAnalysisToolsWebService project.
+
+feereport contains 125 errors/warnings, feereport1 contains 131 errors/warnings, and feereport2 contains 148 errors/warnings. 
+ 
